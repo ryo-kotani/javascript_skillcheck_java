@@ -10,7 +10,7 @@ import in.tech_camp.javascript_skillcheck_java.entity.ArticleEntity;
 
 @Mapper
 public interface ArticleRepository {
-    @Select("select * from articles")
+  @Select("select * from articles order by created_at desc")
   List<ArticleEntity> findAll();
 
   @Insert("insert into articles (text) values (#{text})")
