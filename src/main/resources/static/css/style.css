@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa; /* $background_colorの置換 */
+}
+
+.header {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #00306e; /* $header_colorの置換 */
+}
+
+.contents {
+  min-width: 300px;
+  width: 80%;
+  height: calc(100vh - 140px);
+  background-color: #fff; /* $main_background_colorの置換 */
+  margin-top: 70px;
+  margin-left: 10%;
+  text-align: center;
+  overflow: scroll;
+}
+.contents .article {
+  width: 60%;
+  display: inline-block;
+  padding: 20px;
+  margin-top: 30px;
+  border: 1px solid #666;
+  text-align: left;
+  border-radius: 5px;
+  color: #444;
+}
+.contents .article:last-child {
+  margin-bottom: 30px;
+}
+
+.form-area {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #00306e; /* $header_colorの置換 */
+  text-align: center;
+}
+.form-area .form {
+  height: 30px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+.form-area .form .article_form {
+  height: 30px;
+  width: 620px;
+  font-size: 16px;
+  border-style: none;
+  padding: 0 20px;
+}
+.form-area .form #char_num {
+  display: inline-block;
+  color: #eee;
+}
+.form-area .form input[type="submit"] {
+  border-style: none;
+  line-height: 25px;
+  margin-left: 50px;
+}
+
+.scroll_arrow {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 170px;
+  bottom: 100px;
+  background-color: #888;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  color: #ddd;
+  font-size: 20px;
+}
